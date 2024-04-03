@@ -116,7 +116,7 @@ $form.addEventListener("submit", (e) => {
 
     console.log(size);
 
-    if (size < 2 || size > 700 || isNaN(size)) {
+    if (size < 2 || size > 2000 || isNaN(size)) {
         return alert("El valor ingresado no es valido");
     }
 

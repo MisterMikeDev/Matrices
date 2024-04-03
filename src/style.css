@@ -1,0 +1,120 @@
+:root {
+    --primary: #8e24aa;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1.4rem;
+    text-wrap: pretty;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1d2d37;
+    color: white;
+    padding: 1rem;
+    height: 2rem;
+}
+
+div.info-matrix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-grow: 1;
+    height: calc(100vh - 160px);
+}
+
+section aside {
+    background-color: #253745;
+    width: 20%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.matrix-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section main {
+    background-color: #456b83;
+    width: 100%;
+    overflow: auto;
+    display: grid;
+    place-content: center;
+}
+
+input.ceilCount {
+    text-align: center;
+}
+
+/* Matrix style */
+
+div.matrix-container {
+    max-width: calc(2rem * 20);
+    max-height: calc(2rem * 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem;
+    overflow: auto;
+    background-color: #22303b;
+}
+
+div.matrix-container div.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.matrix-container div.row div.ceil {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}

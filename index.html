@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio de Matrices</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+        />
+        <link rel="stylesheet" href="src/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Ejercicio de Matrices</h1>
+            <div class="info-matrix">
+                <span class="diagonal-left">
+                    Suma de las diagonales <i>(Left to right)</i>:
+                    <b id="sum-left">0</b></span
+                >
+                <span class="diagonal-right">
+                    Suma de las diagonales <i>(Right to left)</i>:
+                    <b id="sum-right">0</b></span
+                >
+            </div>
+        </header>
+        <section>
+            <aside>
+                <h2>Operaciones con matrices</h2>
+                <section class="matrix-btn">
+                    <button id="calc-diagonals">Calcular diagonales</button>
+                    <button id="calc-odd">Calcular impares</button>
+                    <button id="calc-peers">Calcular pares</button>
+                </section>
+                <form id="createMatrix">
+                    <input
+                        class="ceilCount"
+                        type="number"
+                        placeholder="Cantidad de celdas"
+                        name="ceils"
+                        min="2"
+                        max="700"
+                        pattern="/{0-9}/g"
+                        value="3"
+                        required
+                    />
+                    <button type="submit">Crear matriz</button>
+                </form>
+            </aside>
+            <main>
+                <div class="matrix-container"></div>
+            </main>
+        </section>
+    </body>
+    <script type="module" src="/src/main.ts"></script>
+</html>
